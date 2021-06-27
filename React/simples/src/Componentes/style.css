@@ -1,0 +1,275 @@
+*{/*Aqui e uma marcacao global para todo o documento*/
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Montserrat";
+}
+
+body
+{
+    background-color: rgb(228, 228, 228);
+}
+
+.topMenu
+{
+    background-color: #158467;
+    width: 100%;
+}
+
+.itensMenu
+{
+    float: right;
+    font-size: 21px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.itensMenu a
+{
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.limpar /*limpa o efeito de usar float*/
+{
+    clear: both;
+}
+
+.titulo
+{
+    font-size: 38px;
+    font-weight: bold;
+    float: left;
+    margin-left: 5px;
+}
+
+.buttonTitulo
+{
+    float: right;
+    background-color: #158467;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.centralizar
+{
+    margin: 0 auto;
+    max-width: 1280px;   
+}
+
+.w25
+{
+    width: 25%;
+}
+
+.w100
+{
+    width: 100%;
+}
+
+.fundoCabecalhoTabela
+{
+    background-color: turquoise;
+    color: white;
+}
+
+table {
+    border-spacing: 0px;
+  }
+
+.telaCadastro
+{
+    position: absolute;
+    display: grid; 
+    z-index: 1;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 0fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "."
+      "."; 
+    background-color: rgba(48, 48, 48, 0.37);
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.inVisivel
+{
+    display: none;
+}
+
+.Centralizar
+{
+    margin:auto;
+    background-color: white;
+    border-radius: 5px;
+    height: auto;
+    position: relative;
+    z-index: 3;
+    padding: 10px;
+    width: 500px;
+}
+
+.Centralizar a,.Centralizar input, .Centralizar span
+{
+
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+input
+{
+    width: 100%;
+}
+
+.tituloCadastro
+{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.butaoCadastro
+{
+    width: 100%;
+    font-weight: bold;
+    color: white;
+    background-color: #158467;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.erro
+{
+    color: red;
+    font-weight: bold;
+}
+
+
+@media(min-width:0) and (max-width:450px) { 
+
+    .titulo
+    {
+        font-size: 25px;
+        font-weight: bold;
+        float: left;
+        margin-left: 5px;
+    }
+
+    .itensMenu
+{
+    float: right;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+    
+    .buttonTitulo
+    {
+        float: right;
+        background-color: #158467;
+        color: white;
+        border-radius: 5px;
+        padding: 5px;
+        margin-top: 2px;
+        margin-right: 5px;
+        font-size: 12px;
+    }
+
+    .w100
+    {
+        font-size: 12px;
+    }
+
+}
+
+@media(min-width:0) and (max-width:320px) { 
+
+    .titulo
+    {
+        font-size: 16px;
+        font-weight: bold;
+        float: left;
+        margin-left: 5px;
+    }
+
+    .itensMenu
+    {
+        float: right;
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        
+    }
+      
+    
+    .buttonTitulo
+    {
+        float: right;
+        background-color: #158467;
+        color: white;
+        border-radius: 5px;
+        padding: 5px;
+        margin-top: 2px;
+        margin-right: 5px;
+        font-size: 11px;
+    }
+
+    .w100
+    {
+        font-size: 11px;
+    }
+
+}
+
+@media(min-width:0) and (max-width:280px) { 
+
+    .titulo
+    {
+       
+        font-size: 12px;
+        font-weight: bold;
+        float: left;
+        margin-left: 5px;  
+        margin: 0 auto;
+        margin-top: 2px;
+    }
+
+    .itensMenu
+    {
+        float: right;
+        font-size: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        
+    }
+      
+    
+    .buttonTitulo
+    {
+        float: right;
+        background-color: #158467;
+        color: white;
+        border-radius: 5px;
+        padding: 5px;
+        margin-top: 2px;
+        margin-right: 5px;
+        font-size: 11px;
+        margin-bottom: 5px;
+    }
+
+    .w100
+    {
+        font-size: 9px;
+    }
+
+}
